@@ -58,5 +58,17 @@ public class GameManager : MonoBehaviour
         {
             rightHandParticleSystem.Emit(1);
         }
+
+        if (inputProvider.GetLeftController().IsColorSwitchPressed())
+        {
+            var main = leftHandParticleSystem.main;
+            main.startColor = Color.blue;
+        }
+
+        if (inputProvider.GetRightController().IsColorSwitchPressed())
+        {
+            var main = rightHandParticleSystem.main;
+            main.startColor = Color.cyan;
+        }
     }
 }

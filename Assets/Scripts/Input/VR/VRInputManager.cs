@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using UnityEngine.XR.Management;
 
 public class VRInputManager : MonoBehaviour, IInputProvider
